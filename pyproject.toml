@@ -1,0 +1,29 @@
+﻿[build-system]
+requires = ["hatchling>=1.25"]
+build-backend = "hatchling.build"
+
+[project]
+name = "traditionalize-tool"
+version = "0.1.0"
+description = "Scan and convert Simplified Chinese to Traditional Chinese in filenames, documents, text files, and metadata."
+readme = "README.md"
+requires-python = ">=3.10"
+authors = [{ name = "traditionalize-tool contributors" }]
+keywords = ["traditional-chinese", "simplified-chinese", "conversion", "metadata", "office"]
+classifiers = [
+  "Development Status :: 3 - Alpha",
+  "Environment :: Console",
+  "Intended Audience :: End Users/Desktop",
+  "Programming Language :: Python :: 3",
+  "Topic :: Text Processing",
+]
+dependencies = []
+
+[project.optional-dependencies]
+opencc = ["opencc-python-reimplemented>=0.1.7"]
+
+[project.scripts]
+traditionalize = "traditionalize_tool.cli:main"
+
+[tool.hatch.build.targets.wheel]
+packages = ["src/traditionalize_tool"]
