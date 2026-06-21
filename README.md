@@ -1,5 +1,7 @@
 ﻿# Traditionalize Tool
 
+[English](README.md) | [繁體中文](README.zh-TW.md)
+
 **A conservative CLI for turning Simplified Chinese into Traditional Chinese across files, folders, documents, and metadata.**
 
 > Scan first. Preview changes. Convert only what you confirm.
@@ -249,3 +251,4 @@ Recommended contribution areas:
 ---
 
 **If this tool helps your document or media cleanup workflow, consider starring or forking the project.**
+
